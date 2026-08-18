@@ -355,8 +355,3 @@ Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines on 
 - Add or adjust unit-free smoke tests that call each stage with minimal inputs.
 
 ---
-
-
-## License
-
-[MIT](https://github.com/interviewstreet/hiring-agent/blob/master/LICENSE) © HackerRank
