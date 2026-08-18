@@ -49,8 +49,6 @@ This project got a lot of attention recently, and some of the discussion surface
 
 Every year companies receive 50,000–60,000 intern applications. No human can read that many resumes well. This tool was built to *rank* them — helping decide which resumes to read first. Resumes scoring below the cutoff are filtered out, but the cutoff is intentionally set very low so only candidates at the very bottom of the distribution are removed. The vast majority pass through to human review, where the real decisions are made.
 
-Since this was built, HackerRank has also shipped [AI Interviewer (Chakra)](https://www.hackerrank.com/products/ai-interviewer/) to automate the first round of interviews — so candidates are no longer assessed on their resume alone.
-
 **On the default model:**
 
 The repo ships with `gemma4:latest` as the default because it runs locally on most laptops without any cloud API key. Actual intern resumes at HackerRank are evaluated using a top-tier Gemini model. The repo ships with a demo config, not the production one.
@@ -343,15 +341,5 @@ role directory instead.
 - Set `DEFAULT_MODEL` to a Gemini model listed in `providers.json`, for example `gemini-2.0-flash`
 - Provide `GEMINI_API_KEY`
 - The same `models.OpenAICompatibleProvider` wrapper is used, pointed at Gemini's OpenAI-compatible endpoint
-
----
-
-## Contributing
-
-Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines on filing issues, proposing changes, and submitting pull requests. Key principles include:
-
-- Keep prompts declarative and provider-agnostic.
-- Validate changes with a couple of real resumes under different providers.
-- Add or adjust unit-free smoke tests that call each stage with minimal inputs.
 
 ---
